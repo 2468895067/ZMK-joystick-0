@@ -3,7 +3,6 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
 // #define ZMK_POINTING_DEFAULT_MOVE_VAL 200  
 // default: 600
 // #define ZMK_POINTING_DEFAULT_SCRL_VAL 7    
@@ -31,7 +30,7 @@
 
         default_layer {
             bindings = <
-&sk LCTRL     &kp C_VOL_DN  &to 8  &to 2  &kp X   &kp CAPS        &kp CAPS  &kp GRAVE  &kp LEFT_WIN  &kp C  &kp V  &to 1
+&sk LCTRL     &kp C_VOL_DN  &to 8  &to 2  &kp X   &none         &kp CAPS  &kp GRAVE  &kp LEFT_WIN  &kp C  &kp V  &to 1
 &kp C_VOL_UP  &to 3         &to 9  &kp A  &trans  &trans
             >;
         };
@@ -94,8 +93,8 @@
 
         layer_9 {
             bindings = <
-&none  &studio_unlock  &none  &none       &bt BT_NXT  &to 0         &none  &none  &none  &bt BT_SEL 0  &bt BT_CLR  &to 2
-&none  &to 1           &none  &bt BT_PRV  &trans      &trans
+&kp TAB     &studio_unlock  &none  &none       &bt BT_NXT  &to 0         &none  &none  &kp LEFT_ALT  &bt BT_SEL 0  &bt BT_CLR  &to 2
+&kp DELETE  &to 1           &none  &bt BT_PRV  &trans      &trans
             >;
         };
     };
