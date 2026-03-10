@@ -34,16 +34,22 @@
 
         };
 
-        layer_2 {
+        layer_1 {
             bindings = <
         &trans  &kp V  &kp C      &mo 4  &kp Z   &kp LEFT_SHIFT       
         &kp I   &kp O  &kp LCTRL  &kp J  &kp L   &mo 3               
         &kp V   &mo 2  &kp E      &kp K  &trans  &trans              
             >;
+		// MOUSE MOVE
+		joystick_listener_1 {
+    		status = "okay";
+		    compatible = "zmk,input-listener";
+		    device = <&anin1>;
+		};
 
         };
 
-        layer_3 {
+        layer_2 {
             bindings = <
         &none  &kp N   &kp G      &mo 4      &kp X       &kp LSHIFT      
         &kp Q  &kp M   &mkp LCLK  &kp COMMA  &kp PERIOD  &mo 3            
@@ -51,11 +57,19 @@
             >;
         };
 
-        layer_4 {
+        layer_3 {
             bindings = <
         &none  &kp B  &kp SPACE      &mo 4         &kp NUMBER_2  &kp LEFT_SHIFT    
         &kp R  &kp F  &trans         &kp NUMBER_3  &kp NUMBER_4  &none              
         &kp T  &none  &kp BACKSPACE  &kp NUMBER_1  &trans        &trans             
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+        &none                 &kp SLASH          &kp SEMICOLON  &trans  &kp NUMBER_6  &kp LEFT_SHIFT    
+        &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &trans         &kp N7  &kp N8        &none             
+        &kp NON_US_BACKSLASH  &none              &kp SQT        &kp N5  &trans        &trans            
             >;
         };
 
@@ -92,14 +106,6 @@
         };
 
         layer_9 {
-            bindings = <
-        &none                 &kp SLASH          &kp SEMICOLON  &trans  &kp NUMBER_6  &kp LEFT_SHIFT    
-        &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &trans         &kp N7  &kp N8        &none             
-        &kp NON_US_BACKSLASH  &none              &kp SQT        &kp N5  &trans        &trans            
-            >;
-        };
-
-        layer_10 {
             bindings = <
         &none                 &kp SLASH          &kp SEMICOLON  &trans  &kp NUMBER_6  &kp LEFT_SHIFT    
         &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &trans         &kp N7  &kp N8        &none             
