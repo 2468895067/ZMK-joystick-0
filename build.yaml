@@ -9,3 +9,4 @@
 include:
   - board: nice_nano@2.0.0//zmk
     shield: sofle_J
+    snippet: studio-rpc-usb-uart
