@@ -55,11 +55,4 @@
 
 };
 
-/ {
-		// MOUSE MOVE
-		joystick_listener_1 {
-    		status = "okay";
-		    compatible = "zmk,input-listener";
-		    device = <&anin1>;
-		};
-};
+
