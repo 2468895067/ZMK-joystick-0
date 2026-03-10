@@ -37,13 +37,6 @@
 &kp NUMBER_1  &mo 2  &kp E  &kp K  &trans  &trans
             >;
 
-            // MOUSE MOVE
-
-            joystick_listener_1 {
-                status = "okay";
-                compatible = "zmk,input-listener";
-                device = <&anin1>;
-            };
         };
 
         layer_2 {
