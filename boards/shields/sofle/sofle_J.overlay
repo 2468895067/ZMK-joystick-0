@@ -33,7 +33,7 @@
 			io-channels = <&adc 0>;
 			mv-mid = <1650>;
 			mv-min-max = <10>;
-			mv-deadzone = <200>;
+			mv-deadzone = <400>;
 			scale-multiplier = <1>;
 			scale-divisor = <1>;
 			invert;
@@ -42,7 +42,7 @@
 		};
 		y-ch {
 			io-channels = <&adc 5>;
-			mv-mid = <1750>;
+			mv-mid = <1650>;
 			mv-min-max = <10>;
 			mv-deadzone = <400>;
 			scale-multiplier = <1>;
@@ -55,4 +55,11 @@
 
 };
 
-
+/ {
+        // MOUSE MOVE
+        joystick_listener_1 {
+            status = "okay";
+            compatible = "zmk,input-listener";
+            device = <&anin1>;
+        };
+};
