@@ -93,7 +93,7 @@
 
         layer_9 {
             bindings = <
-&none         &bt BT_SEL 1  &none         &bt BT_SEL 2  &none   &to 0         &bt BT_SEL 2  &bt BT_SEL 3  &kp C_POWER  &none  &bt BT_CLR  &to 1
+&none         &bt BT_SEL 1  &bt BT_SEL 5  &bt BT_SEL 2  &none   &to 0         &bt BT_SEL 2  &bt BT_SEL 3  &kp C_POWER  &none  &bt BT_CLR  &to 1
 &bt BT_SEL 4  &to 3         &bt BT_SEL 0  &none         &trans  &trans
             >;
         };
