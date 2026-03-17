@@ -51,8 +51,8 @@
 
         layer_3 {
             bindings = <
-&kp DELETE    &kp NUMBER_1  &kp NUMBER_9  &to 7         &kp NUMBER_5  &to 0         &kp NUMBER_2  &kp NUMBER_3  &sk LEFT_SHIFT  &kp NUMBER_6  &kp NUMBER_7  &to 4
-&kp NUMBER_4  &none         &kp NUMBER_0  &kp NUMBER_8  &trans        &trans
+&kp BACKSPACE    &kp NUMBER_1  &kp NUMBER_9  &to 7         &kp NUMBER_5  &to 0         &kp NUMBER_2  &kp NUMBER_3  &sk LEFT_SHIFT  &kp NUMBER_6  &kp NUMBER_7  &to 4
+&kp NUMBER_4     &kp DELETE    &kp NUMBER_0  &kp NUMBER_8  &trans        &trans
             >;
         };
 
@@ -79,7 +79,7 @@
 
         layer_7 {
             bindings = <
-&kp DELETE            &kp SLASH  &kp COMMA   &kp GRAVE  &kp MINUS  &to 0         &kp SEMICOLON  &kp SQT  &sk LCTRL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &to 4
+&kp BACKSPACE         &kp SLASH  &kp COMMA   &kp GRAVE  &kp MINUS  &to 0         &kp SEMICOLON  &kp SQT  &sk LCTRL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &to 4
 &kp NON_US_BACKSLASH  &to 3      &kp PERIOD  &kp EQUAL  &trans     &trans
             >;
         };
